@@ -1,0 +1,25 @@
+.field {
+  display: grid;
+  grid-template-rows: auto 2.5rem;
+  gap: .25rem;
+
+  .field__name {
+    &::after {
+      content: ' *';
+      color: hsl(169, 82%, 27%);
+    }
+  }
+
+  .field__item {
+    border-radius: .5rem;
+    border: 1px solid hsl(187, 24%, 22%);
+    
+    &:focus {
+      outline-color: hsl(169, 82%, 27%);
+    }
+  }
+
+  .field__error {
+    color: hsl(0, 66%, 54%);
+  }
+}
