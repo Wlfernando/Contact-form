@@ -21,5 +21,16 @@
 
   .field__error {
     color: hsl(0, 66%, 54%);
+    display: none;
+  }
+
+  &:has(:user-invalid) {
+    .field__error {
+      display: block;
+    }
+
+    .field__item {
+      border-color: hsl(0, 66%, 54%);
+    }
   }
 }
