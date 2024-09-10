@@ -1,11 +1,7 @@
 import { useRef } from 'react';
 import './Radio.css'
-
-const hasError = 'radio_has-error'
-
-function filterInvalid({ elements }: HTMLFieldSetElement) {
-  return Array.from(elements).some(e => e instanceof HTMLInputElement && !e.validity.valid)
-}
+import { hasError } from '../../utils/const';
+import { filterInvalid, checkValidity } from '../../utils/utils'
 
 export default function Radio({
   name,
@@ -18,13 +14,7 @@ export default function Radio({
   onChange: Function;
   value: string;
 }) {
-  const radioRef = useRef<null | HTMLInputElement>(null);
-
-  function checkValidity({currentTarget: target}: React.FocusEvent<HTMLFieldSetElement, Element>) {
-    filterInvalid(target) ?
-      target.classList.add(hasError) :
-      target.classList.remove(hasError)
-  }
+  const radioRef = useRef<null | HTMLInputElement>(null);  
 
   return (
     <>
