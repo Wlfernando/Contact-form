@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Karla-VariableFont";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Karla-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Karla-VariableFont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Karla-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Karla-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./Karla-Bold.ttf');
+}
