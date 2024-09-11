@@ -1,0 +1,45 @@
+.text-field {
+  display: grid;
+  margin-inline: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  border: none;
+  gap: .5rem;
+
+  .text-field__name {
+    &::after {
+      content: ' *';
+      color: hsl(169, 82%, 27%);
+    }
+  }
+
+  .text-field__item {
+    height: 15rem;
+    border-radius: .4rem;
+    resize: none;
+
+    &:focus {
+      outline-color: hsl(169, 82%, 27%);
+    }
+
+    @media screen and (width > 640px) {
+      height: 7rem;
+    }
+  }
+
+  .text-field__error {
+    margin-block: 0;
+    color: hsl(0, 66%, 54%);
+    display: none;
+  }
+
+  &.field_has-error {
+    .text-field__item {
+      border-color: hsl(0, 66%, 54%);
+    }
+
+    .text-field__error {
+      display: block;
+    }
+  }
+}
