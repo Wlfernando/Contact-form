@@ -5,7 +5,5 @@
 }
 
 .main {
-  width: 100%;
-  background-color: white;
-  color: black;
+  display: grid;
 }

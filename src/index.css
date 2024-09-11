@@ -12,13 +12,17 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.87);
   background-color: hsl(148, 38%, 91%);
+  color: hsl(187, 24%, 22%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (width < 640px) {
+    font-size: 95%;
+  }
 }
 
 body {
