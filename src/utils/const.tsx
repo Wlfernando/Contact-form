@@ -1,1 +1,1 @@
-export const hasError = 'radio_has-error'
+export const hasError = 'field_has-error'
