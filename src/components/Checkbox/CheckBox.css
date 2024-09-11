@@ -1,0 +1,24 @@
+.checkbox {
+  display: flex;
+  gap: 1rem;
+
+  .checkbox__name {
+    &::after {
+      content: ' *';
+      color: hsl(169, 82%, 27%);
+    }
+  }
+
+  .checkbox__item {
+    accent-color: hsl(169, 82%, 27%);
+  }
+}
+
+.checkbox__error {
+  position: relative;
+  bottom: .75rem;
+}
+
+.field_has-error + .checkbox__error {
+  display: block;
+}
