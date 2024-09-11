@@ -1,9 +1,25 @@
 #root {
-  margin: 0 auto;
   padding: 1rem;
   width: clamp(320px, 100%, 800px);
+  display: grid;
+  align-content: space-between;
+  flex-grow: 1;
+  gap: 1rem;
+  box-sizing: border-box;
 }
 
 .main {
   display: grid;
+  grid-row-start: 2;
+}
+
+.footer {
+  display: grid;
+  justify-items: center;
+  font-size: .75rem;
+  grid-row-start: 3;
+
+  .footer__text {
+    margin-block: 0;
+  }
 }
