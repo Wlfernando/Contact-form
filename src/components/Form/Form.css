@@ -2,4 +2,10 @@
   display: grid;
   gap: 1rem .5rem;
   padding: 1.75rem;
+
+  .form__field-error {
+    color: hsl(0, 66%, 54%);
+    margin-block: 0;
+    display: none;
+  }
 }
