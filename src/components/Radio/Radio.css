@@ -45,7 +45,7 @@
       border-color: hsl(169, 82%, 27%);
     }
 
-    :not(&) {
+    .radio > :not(&) {
       @media screen and (width > 640px) {
         grid-column: span 2;
       }
@@ -55,5 +55,16 @@
   .radio__error {
     color: hsl(0, 66%, 54%);
     margin-block: 0;
+    display: none;
+  }
+
+  &.field_has-error {
+    .radio__name {
+      color: hsl(0, 66%, 54%);
+    }
+
+    .radio__error {
+      display: block;
+    }
   }
 }
