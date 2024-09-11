@@ -35,7 +35,7 @@ export default function Radio({
             <span>{option}</span>
           </label>
         )}
-        <p className='radio__error'>{radioRef.current?.validationMessage}</p>
+        <p className='radio__error form__field-error'>{radioRef.current?.validationMessage}</p>
       </fieldset>
     </>
   )

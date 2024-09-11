@@ -22,10 +22,11 @@ export default function TextArea({
           name={name}
           id={name}
           ref={textAreaRef}
-          required value={value}
+          required
+          value={value}
           onChange={({currentTarget: {name, value}}) => onChange(name, value)}
-        ></textarea>
-        <p className="text-field__error">{textAreaRef.current?.validationMessage}</p>
+        />
+        <p className="text-field__error form__field-error">{textAreaRef.current?.validationMessage}</p>
       </fieldset>
     </>
   )
