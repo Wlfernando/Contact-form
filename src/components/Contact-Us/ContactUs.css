@@ -1,0 +1,28 @@
+.contact-us {
+  align-items: start;
+  border-radius: 1rem;
+  background-color: white;
+  
+  .contact-us__title {
+    margin-block: 0;
+  }
+
+  .contact-us__button {
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    height: 3rem;
+    transition: background-color 150ms ease-in-out;
+
+    &:hover {
+      background-color: hsl(169, 82%, 15%);
+    }
+  }
+  
+  @media screen and (width > 640px) {
+    grid-template-columns: 1fr 1fr;
+
+    > :not(:nth-child(n+2):where(:nth-child(-n+3))) {
+      grid-column: span 2;
+    }
+  }
+}
